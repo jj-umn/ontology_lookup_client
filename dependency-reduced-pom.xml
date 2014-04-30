@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.umn.msi.gx</groupId>
+  <artifactId>ontology_lookup_client</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.2</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>edu.umn.msi.gx.ontology_lookup_client.OntologyLookUp</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>javax.xml</groupId>
+      <artifactId>jaxrpc</artifactId>
+      <version>1.1</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <properties>
+    <commons.cli.version>1.2</commons.cli.version>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <commons.discovery.version>0.2</commons.discovery.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <commons.logging.version>1.0.4</commons.logging.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <javax.activation.version>1.1.1</javax.activation.version>
+    <javax.xml.jaxrpc.version>1.1</javax.xml.jaxrpc.version>
+    <ols.dialog.version>3.3.3</ols.dialog.version>
+  </properties>
+</project>
+

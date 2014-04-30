@@ -190,7 +190,7 @@ public class OntologyLookUp {
         }
     }
     public void printOntologyEntry(OntologyEntry ontologyEntry) {
-        out.printf("%s\t[ %s, %s, %s ]\t%s %s\n", ontologyEntry.getOntology(), ontologyEntry.getOntology(), ontologyEntry.getId(), ontologyEntry.getName(), ontologyEntry.getId(), ontologyEntry.getAncestorNames());
+        out.printf("%s\t[ %s, %s, %s, ]\t%s %s\n", ontologyEntry.getOntology(), ontologyEntry.getOntology(), ontologyEntry.getId(), ontologyEntry.getName(), ontologyEntry.getId(), ontologyEntry.getAncestorNames());
     }
 
     public static void main(String[] args) { // ontology, id/name, leaf?

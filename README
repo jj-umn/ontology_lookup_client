@@ -9,17 +9,18 @@ This uses the OLS SOAP Demo client (java): http://www.ebi.ac.uk/ontology-lookup/
 
 The application will retrieves ontology entries and output a 3 column tabular file, e.g. :
 
-BTO	[ BTO, BTO:0000608, liver adenocarcinoma cell ]	BTO:0000608 liver adenocarcinoma cell
-BTO	[ BTO, BTO:0000578, hepatoma cell line ]	BTO:0000578 liver adenocarcinoma cell; hepatoma cell line
+BTO	[ BTO, BTO:0000608, liver adenocarcinoma cell, ]	BTO:0000608 liver adenocarcinoma cell
+BTO	[ BTO, BTO:0000578, hepatoma cell line, ]	BTO:0000578 liver adenocarcinoma cell; hepatoma cell line
 
 
 
 The columns are:
-1.	The ontology ID
-2.	A triplet with: [ Ontology, EntryID, description ]
-3.	The EntryID followed by semicolon-separated list of descriptions in the hierarchical ontology path to this entry
+  1.	The ontology ID
+  2.	A triplet with: [ Ontology, EntryID, description ]
+  3.	The EntryID followed by semicolon-separated list of descriptions in the hierarchical ontology path to this entry
 
+
+The proetomeXchange submission file uses the value in column 2:  
+http://www.proteomexchange.org/sites/proteomexchange.org/files/documents/proteomexchange_submission_summary_version_2.0.pdf
 
 This output can be used in a Galaxy select parameter from either a dataset or tool-data .loc file 
-
-

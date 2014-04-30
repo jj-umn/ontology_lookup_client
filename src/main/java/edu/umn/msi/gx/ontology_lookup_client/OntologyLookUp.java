@@ -25,7 +25,7 @@ import uk.ac.ebi.demo.ols.business.OLSClient;
 
 /**
  *
- * @author James E Johnson <jj@umn.edu>
+ * @author James E Johnson jj@umn.edu
  * @version
  */
 public class OntologyLookUp {
